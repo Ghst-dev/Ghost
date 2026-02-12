@@ -1,14 +1,14 @@
 .audio-floating-corner {
     position: fixed;
-    top: 20px;   /* Distance du haut */
-    left: 20px;  /* Distance de la gauche */
-    z-index: 999; /* Pour qu'il soit toujours au-dessus du flou */
+    top: 20px;
+    left: 20px;
+    z-index: 999;
 }
 
 .volume-control {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2); /* Un peu plus sombre pour détacher du fond */
+    background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 50px;
     backdrop-filter: blur(10px);
@@ -33,7 +33,6 @@
     cursor: pointer;
 }
 
-/* L'effet au survol : la barre se déploie */
 .volume-control:hover {
     background: rgba(255, 255, 255, 0.1);
     padding-right: 15px;
