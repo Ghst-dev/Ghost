@@ -19,7 +19,7 @@
     transition: all 0.3s ease;
 }
 
-/* Effets de couleurs au survol */
+
 .btn:hover {
     transform: scale(1.03);
     background: rgba(255, 255, 255, 0.2);
