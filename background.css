@@ -1,0 +1,42 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Empêche le scroll si la vidéo dépasse */
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    /* On change le scale ici : 0.8 ou 0.7 pour "éloigner" l'image */
+    transform: translate(-50%, -50%) scale(0.8); 
+    object-fit: cover;
+    background-color: black; /* Pour éviter les bords blancs si on réduit trop */
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrit la vidéo */
+    backdrop-filter: blur(10px); /* Applique le flou */
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+}
